@@ -5,15 +5,30 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 h1{
-    font-size: 300px;
+    font-size: 100px;
     color: rgb(180, 135, 20);
 }
-.choices{
-    margin-bottom: 10px;
+.emoji{
+    margin-right: 7px; 
+    display: flex;
+   }
+.emoji-button{
+    margin-right:10px;
+    border-radius: 50%;
+    font-size:200px;
+    min-width: 180px;
+    margin-bottom: 8px;
 }
-.choices button{
- font-size: 200px;
- 
+#playerDisplay,#computerDisplay{
+    font-size: 50px;
+    margin-top: 20px;
 }
+#resultDisplay{
+    font-size: 80px;
+}
+
+
+
