@@ -1,14 +1,21 @@
-const emoji = ["rock","paper","scissors"];
-const playerDisplay = document.getElementDyId("playerDisplay");
-const computerDisplay = document.getElementDyId("computerDisplay");
-const resultDisplay = document.getElementDyId("esultDisplay");
+const choices = ["rock","paper","scissors"];
+const playerDisplay = document.getElementById("playerDisplay");
+const computerDisplay = document.getElementById("computerDisplay");
+const resultDisplay = document.getElementById("resultDisplay");
+const playerScoreDisplay = document.getElementById("playerScoreDisplay");
+const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+
+let playerScore = 0;
+let computerScore = 0;
 
 function playGame(playerChoice){
-    const computerChoice =choices[ Math.floor(Math.random() *3) ];
+     const computerChoice =choices[ Math.floor
+        (Math.random() * 3) ];
+        console.log("Computer choice:", computerChoice);
     result= "";
 
     if(playerChoice === computerChoice){
-        result ="IT'S A TIE";
+        result ="IT'S A TIE!";
     }
     else{
         switch(playerChoice){
@@ -22,8 +29,20 @@ function playGame(playerChoice){
         result = (computerChoice === "paper")? "YOU WIN!":"YOU LOSE!";
         }
     }
-    playerDisplay.textContent = 'PLAYER ${playerChoice}';
-    computerDisplay.textContent = 'COMPUTER: ${computerChoice}';
-    playerDisplay.textContent = 'PLAYER: ${playerChoice}';
+    playerDisplay.textContent = `PLAYER :${playerChoice}`;
+    computerDisplay.textContent = `COMPUTER: ${computerChoice}`;
+    resultDisplay.textContent = result;
+    
+    switch(result){
+        case "YOU WIN":
+        playerScore++;
+        playerScoreDisplay.textContent = playerScore;
+        break;
+        case "YOU LOSE":
+            playerScore++;
+        computerScoreDisplay.textContent = computerScore;
+        break;
+            
+    }
 
 }

@@ -18,16 +18,20 @@ h1{
 .emoji-button{
     margin-right:10px;
     border-radius: 50%;
-    font-size:200px;
+    font-size:150px;
     min-width: 180px;
     margin-bottom: 8px;
 }
 #playerDisplay,#computerDisplay{
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom:10px;
 }
-#resultDisplay{
+.resultDisplay{
     font-size: 80px;
+    color: aqua;
+}
+.scoreDisplay{
+    font-size: 40px;
 }
 
 
