@@ -27,11 +27,22 @@ h1{
     margin-bottom:10px;
 }
 .resultDisplay{
-    font-size: 80px;
-    color: aqua;
+    font-size: 0px;
+    }
+.display{
+    color: rgb(233, 101, 13);
+    font-size: 50px;
 }
 .scoreDisplay{
-    font-size: 40px;
+    font-size: 30px;
+}
+.player{
+    color: rgb(185, 149, 16);
+    font-size: 30px;
+}
+.computer{
+    color: rgb(185, 149, 16);
+    font-size: 30px;
 }
 
 
